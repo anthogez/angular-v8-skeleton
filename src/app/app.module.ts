@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { RoutingModule } from './modules/routing.module';
 import { MaterialModule } from './modules/material.module';
@@ -15,6 +16,7 @@ import { ManageComponentService } from './shared/services/manage-component/manag
     RoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
+    HttpClientModule
   ],
   providers: [RestService, ManageComponentService],
   bootstrap: [AppComponent]
