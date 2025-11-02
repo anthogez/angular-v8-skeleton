@@ -37,6 +37,9 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",
+    "cross-spawn": "7.0.6",
+    "form-data": "4.0.4",
+    "got": "14.6.1",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.1.0",
@@ -46,8 +49,11 @@
     "karma-jasmine-html-reporter": "^1.4.0",
     "nodemon": "^1.19.2",
     "protractor": "~5.4.0",
+    "tmp": "0.2.5",
+    "tough-cookie": "6.0.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
-    "typescript": "~3.5.3"
+    "typescript": "~3.5.3",
+    "xml2js": "0.6.2"
   }
 }
