@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RestService } from './shared/services/rest/rest.service';
 import { ManageComponentService } from './shared/services/manage-component/manage-component.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent],
@@ -15,6 +16,7 @@ import { ManageComponentService } from './shared/services/manage-component/manag
     RoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
+    HttpClientModule,
   ],
   providers: [RestService, ManageComponentService],
   bootstrap: [AppComponent]
