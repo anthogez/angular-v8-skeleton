@@ -13,8 +13,8 @@ export class RestService {
     url: string,
     params?: string | URLSearchParams | { [key: string]: any | any[] } | null,
     headers?: HttpHeaders | null
-  ): Observable<Response> {
-    return this.http.get<Response>(url, this.createOptions(params, headers));
+  ): Observable<any> {
+    return this.http.get<any>(url, this.createOptions(params, headers));
   }
 
   post(
@@ -22,8 +22,8 @@ export class RestService {
     body?: any,
     params?: string | URLSearchParams | { [key: string]: any | any[] } | null,
     headers?: HttpHeaders | null
-  ): Observable<Response> {
-    return this.http.post<Response>(
+  ): Observable<any> {
+    return this.http.post<any>(
       url,
       body,
       this.createOptions(params, headers)
@@ -35,8 +35,8 @@ export class RestService {
     body?: any,
     params?: string | URLSearchParams | { [key: string]: any | any[] } | null,
     headers?: HttpHeaders | null
-  ): Observable<Response> {
-    return this.http.put<Response>(
+  ): Observable<any> {
+    return this.http.put<any>(
       url,
       body,
       this.createOptions(params, headers)
@@ -54,10 +54,10 @@ export class RestService {
   // TODO paramsMaker() | paramsHandler()
 
   headersMaker() {
-    const headers = new HttpHeaders();
+    let headers = new HttpHeaders();
     // headers.append('Authorization', 'none apply me');
-    headers.append('Access-Control-Allow-Origin', '*');
-    headers.append('Content-Type', 'application/json');
+    headers = headers.append('Access-Control-Allow-Origin', '*');
+    headers = headers.append('Content-Type', 'application/json');
     return headers;
   }
 }
