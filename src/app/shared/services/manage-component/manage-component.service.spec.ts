@@ -6,7 +6,7 @@ describe('ManageComponentService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: ManageComponentService = TestBed.get(ManageComponentService);
+    const service: ManageComponentService = TestBed.inject(ManageComponentService);
     expect(service).toBeTruthy();
   });
 });
